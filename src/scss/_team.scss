@@ -1,0 +1,97 @@
+.container-team{
+    margin: 50px 130px;
+    .flex-team{
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+        .team-presentation{
+            display: flex;
+            flex-direction: column;
+            h1{
+                font-weight: 600;
+                margin: 0rem 0rem;
+            }
+            p{
+                color: gray;
+                font-size: 15px;
+            }
+        }
+        .team-group{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 2rem;
+            width: 100%;
+            .team-card{
+                    width: 600px;
+                    height: 400px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    border: 1px solid rgba(0, 0, 0, 0.1882352941);
+                    box-sizing: border-box;
+                    /* padding: 2rem; */
+                    background: #000000d1;
+                    border-radius: 10px;
+                    color: white;
+                    gap: 1rem;
+                &:hover .img{
+
+                    
+                }
+                &:hover h4{
+                    font-size: 17.5px;
+                }
+                &:hover p{
+                    text-decoration: underline;
+                }
+                img{
+                    width: 150px;
+                    height: 150px;
+                    border-radius: 50%;
+                    object-fit: contain;
+                }
+                h4{
+                    border: 1px solid;
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+                p{
+                    margin: 11px 10px 10px 10px;
+                }
+                .team-reference{
+                    display: flex;
+                    width: 100%;
+                    align-items: center;
+                    justify-content: center;
+                    ul{
+                        list-style-type: none;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        gap: 2rem;
+                        margin: 0;
+                        padding: 0;
+                        li{
+                            a{
+                                text-decoration: none;
+                                img{
+                                    width: 25px;
+                                    height: 25px;
+                                    &:hover{
+                                        background-color: #e84444e6;
+                                        border-radius: 50%;
+                                        padding: 5px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,34 @@
+.client-opinion-container{
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 2rem;
+    width: 100%;
+    .client-opinion-title{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        h3{
+
+        }
+        h1{
+
+        }
+    }
+    .container-slider{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .client-slider{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            .client-slide{
+                width: 500px;
+            }
+        }
+    }
+}

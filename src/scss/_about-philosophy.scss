@@ -1,0 +1,84 @@
+.philosophy-container{
+    margin: 3rem 2rem;
+    .philosophy-flex{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        gap: 2rem;
+        padding: 0rem;
+        flex-wrap: wrap;
+        .philosophy-img{
+            position: relative;
+            margin: 1rem;
+            .bg{
+                position: absolute;
+                width: 100%;
+                height: 98%;
+                background: #00000061;
+                border-radius: 10px;
+            }
+            img{
+                width: 500px;
+                border-radius: 10px;
+            }
+            a{
+                position: absolute;
+                width: 35px;
+                height: 35px;
+                top: 135px;
+                left: 217px;
+                border: 3px solid #fff;
+                border-radius: 52%;
+                padding: 11px;
+                z-index: 99;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                &:hover{
+                    padding: 13px;
+                    transition: 0.2s ease;
+                }
+                img{
+                    width: 70%;
+                    height: 70%;
+                }
+            }
+            &:hover .bg {
+                background: #0000006f;
+            }
+        }
+        .philosophy-text{
+            width: 40%;
+            h4{
+                margin: 0.6rem 0rem;
+                color: #5c5c5c;
+                font-weight: 600;
+            }
+            h1{
+                margin: 0rem;
+                font-family: 500;
+
+            }
+            p{
+                font-size: 14.5px;
+                color: #565656;
+            }
+            button{
+                box-sizing: border-box;
+                padding: 12px 30px;
+                background-color: rgb(182, 17, 17);
+                color: white;
+                border: none;
+                border-radius: 20px;
+                font-size: 15px;
+                font-weight: bold;
+                cursor: pointer;
+                &:hover{
+                    background-color: rgb(205, 2, 2);
+                    transition: 0.2s ease;
+                }
+            }
+        }
+    }
+}

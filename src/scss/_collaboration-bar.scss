@@ -1,0 +1,92 @@
+.work-whith-uss-container{
+        background-color: #202020;
+        padding: 0.5rem 2rem;
+        box-sizing: border-box;
+    .contact-uss{
+        color: white;
+        h1{
+            font-weight: 500;
+            margin-bottom: 10px;
+        }
+        h4{
+            font-weight: 500;
+            padding: 0;
+            margin: 5px;
+        }
+        .contact{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .phone-mail{
+                display: flex;
+                gap: 2.5rem;
+                margin-top: 1rem;
+                margin-bottom: 2rem;
+                .phone{
+                    display: flex;
+                    align-items: center;
+                    gap: 1rem;
+                    img{
+                        width: 30px;
+                        height: 30px;
+                    }
+                    a{
+                        color: white;
+                        text-decoration: none;
+                        font-size: 15px;
+                        &:hover{
+                        text-decoration: underline;
+                        color: $red-color;
+                        transition: 0.2s ease;
+                        }
+                    }
+                }
+                .mail{
+                    display: flex;
+                    align-items: center;
+                    gap: 1rem;
+                    img{
+                        width: 30px;
+                        height: 30px;
+                    }
+                    a{
+                        color: white;
+                        text-decoration: none;
+                        font-size: 15px;
+                        &:hover{
+                            text-decoration: underline;
+                            color: $red-color;
+                            transition: 0.2s ease;
+                        }
+                    }
+                }
+            }
+            .social{
+                display: flex;
+                flex-direction: column;
+                ul{
+                    list-style-type: none;
+                    display: flex;
+                    gap: 1.5rem;
+                    padding: 0;
+                    margin: 0;
+                    li{
+                        a{
+                            text-decoration: none;
+                            img{
+                                width: 30px;
+                                height: 30px;
+                                padding: 8px;
+                                &:hover{
+                                    background-color: rgba(255, 0, 0, 0.701);
+                                    border-radius: 50px;
+                                    transition: 0.2s ease;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

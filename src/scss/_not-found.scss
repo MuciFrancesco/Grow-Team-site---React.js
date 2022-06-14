@@ -1,0 +1,13 @@
+.not-found-container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    .not-found-img{
+        width: 100%;
+        img{
+            width: 100%;
+        }
+    }
+
+}

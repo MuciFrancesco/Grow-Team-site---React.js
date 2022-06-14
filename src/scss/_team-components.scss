@@ -1,0 +1,131 @@
+.team-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 50px;
+    .team-components{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 5rem;
+        .team-style-one{
+            border-radius: 10px;
+            background-color: rgb(46 46 46);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 500px;
+            .style-one-img{
+                width: 40%;
+                height: 100%;
+                img{
+                    border-radius: 10px 0px 0px 10px;
+                    width: 80%;
+                    height: 100%;
+                    object-fit: none;
+                }
+            }
+            .style-one-text{
+                box-sizing: border-box;
+                padding: 0px 3rem 0px 0px;
+                color: white;
+                width: 60%;
+                h1{
+                    font-size: 29px;
+                }
+                p{
+                    font-size: 15px;
+                }
+                .info{
+                    display: flex;
+                    justify-content: space-between;
+                    flex-direction: column;
+                    gap: 1rem;
+                    h4{
+                        text-decoration: underline;
+                        margin: 1rem;
+                    }
+                    button{
+                        color: white;
+                        font-weight: 600;
+                        font-size: 15px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        gap: 1rem;
+                        padding: 0.7rem 1rem;
+                        border-radius: 50px;
+                        border: none;
+                        background-color: rgb(182, 17, 17);
+                        cursor: pointer;
+                        width: 26%;
+                        &:hover{
+                            background-color: rgb(214, 20, 20);
+                            transition: 0.4s ease;
+                        }
+                    }
+                }
+
+            }
+        }
+        .team-style-two{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 500px;
+            .style-two-img{
+                width: 40%;
+                height: 85%;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .style-two-text{
+                box-sizing: border-box;
+                padding: 0px 70px 0px 35px;
+                width: 60%;
+                h1{
+                    font-size: 29px;
+                }
+                p{
+                    font-size: 15px;
+                }
+                .info{
+                    display: flex;
+                    justify-content: space-between;
+                    flex-direction: column;
+                    gap: 1rem;
+                    h4{
+                        text-decoration: underline;
+                        margin: 1rem;
+                    }
+                    button{
+                        color: black;
+                        font-weight: 600;
+                        font-size: 15px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        gap: 1rem;
+                        padding: 0.7rem 1rem;
+                        border-radius: 50px;
+                        border: none;
+                        background-color: white;
+                        border: 1px solid black;
+                        cursor: pointer;
+                        width: 26%;
+                        &:hover{
+                            background-color: black;
+                            color: white;
+                            border: 1px solid black;
+                            transition: 0.4s ease;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

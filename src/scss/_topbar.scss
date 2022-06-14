@@ -1,0 +1,100 @@
+.topbar-info{
+background-color: #000000d1;
+display: flex;
+align-items: center;
+justify-content: end;
+gap: 2rem;
+padding-right: 10rem;
+img{
+    position: absolute;
+    top: -8px;
+    left: 80px;
+    z-index: 100;
+    width: 220px;
+    height: 167px;
+    box-shadow: 0px 0px 20px 2px;
+}
+.divide{
+    color: white;
+}
+.mail{
+color:  white;
+text-decoration: none;
+&:hover{
+    text-decoration: underline;
+}
+}
+.cell{
+    display: flex;
+    color: white;
+    gap: 1rem;
+    .cell-a{
+        font-weight: bold;
+        font-size: 16px;
+        color: $red-color;
+        text-decoration: none;
+        &:hover{
+            color: rgb(205, 2, 2);
+            text-decoration: underline 2px solid rgb(205, 2, 2);
+        }
+    }
+}
+}
+
+
+
+nav{
+    margin: 1rem 0rem;
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    h1{
+        padding-left: 3rem;
+        width: 50%;
+
+    }
+    .topbar-links{
+        display: flex;
+        justify-content: center;
+        padding-right: 6rem;
+        align-items: center;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        width: 100%;
+        a{
+            color: black;
+            font-weight: bold;
+            text-decoration: none;
+            font-size: 1rem;
+            display: flex;
+            align-items: center;
+            width: 100%;
+            justify-content: center;
+            &:hover{
+                transition: 0.2s ease;
+                color: $red-color;
+                text-decoration: underline $red-color 2.5px;
+            }
+        }
+        button{
+            box-sizing: border-box;
+            padding:12px 30px;
+            background-color: $red-color;
+            color: white;
+            border: none;
+            border-radius: 20px;
+            font-size: 15px;
+            font-weight: bold;
+            cursor: pointer;
+            &:hover{
+                background-color: rgb(205, 2, 2);
+            }
+        }
+
+    }
+
+
+}
