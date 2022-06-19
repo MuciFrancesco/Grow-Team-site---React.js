@@ -1,24 +1,27 @@
-.about-uss{
+.about-uss {
     position: relative;
-    .about-img{
+
+    .about-img {
         width: 100%;
         height: 100%;
-        img{
+
+        img {
             width: 100%;
             z-index: 5;
         }
-        .bg{
-           position: absolute;
-           background-color: #00000085;
-           top: 0;
-           left: 0;
-           z-index: 10;
-           width: 100%;
-           height: 100%;
+
+        .bg {
+            position: absolute;
+            background-color: #00000085;
+            top: 0;
+            left: 0;
+            z-index: 10;
+            width: 100%;
+            height: 100%;
         }
     }
 
-    .about-card{
+    .about-card {
         position: absolute;
         width: 50%;
         background-color: #303032;
@@ -29,29 +32,27 @@
         right: 0;
         z-index: 100;
         border-radius: 5px;
-        .about-text{
-           h1{
-   
-           }
-           p{
-   
-           }
+
+        .about-text {
+            h1 {}
+
+            p {}
         }
-        .about-list{
+
+        .about-list {
             display: flex;
             gap: 1rem;
-            .ul-1{
-                li{
 
-                }
+            .ul-1 {
+                li {}
             }
-            .ul-2{
-                li{
 
-                }
+            .ul-2 {
+                li {}
             }
         }
-        button{
+
+        button {
             margin-top: 1rem;
             box-sizing: border-box;
             padding: 12px 30px;
@@ -62,6 +63,11 @@
             font-size: 15px;
             font-weight: bold;
             cursor: pointer;
+
+            &:hover {
+                background-color: rgb(222, 15, 15);
+                transition: 0.4s ease;
+            }
         }
     }
 

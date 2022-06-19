@@ -1,22 +1,11 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { motion } from "framer-motion";
+import { infoTeam, opinion, loremSite } from "../document/array";
 import TeamBg from "../components/TeamBg";
 import ClientOpinion from "../components/ClientOpinion";
 import AboutPhilosophy from "../components/AboutPhilosophy";
 import AboutUss from "../components/AboutUss";
 import CompanyMission from "../components/CompanyMission";
-const infoTeam = "Scopri chi siamo";
-const textLorem =
-  "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem dolorum, doloremque quibusdam odit architecto eaque obcaecati harum beatae, labore repellendus cupiditate sunt deserunt dolore quisquam fuga. Quae, quas odit. Dolor.";
-const loremSite = "www.loremIpsum.com";
-const opinion = [
-  { id: 0, text: textLorem, name: "Amelia Richards", feedBack: 4.5 },
-  { id: 1, text: textLorem, name: "Richard Thomson", feedBack: 5 },
-  { id: 2, text: textLorem, name: "Giulia Holl", feedBack: 3.5 },
-  { id: 3, text: textLorem, name: "Stephan Robertson", feedBack: 5 },
-  { id: 4, text: textLorem, name: "Patrick Nelson", feedBack: 4 },
-  { id: 5, text: textLorem, name: "William Dolfin", feedBack: 4.5 },
-];
 
 function AboutUs() {
   return (

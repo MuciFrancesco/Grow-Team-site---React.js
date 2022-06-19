@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import grafich from "../assets/grafich.png";
+import plus from "../assets/plus.svg"
+import minum from "../assets/minus.svg"
 
 function CompanyMission() {
   const textContent =
@@ -39,7 +41,10 @@ function CompanyMission() {
               onClick={() => handleOpenActive(i)}
             >
               <div className='mission-text-div'>
-                {el.title}
+                <div className="mission-text-title">
+                  {showText.activeDiv===showText.object[i]?<img src={minum} alt="img non trovata"/>:<img src={plus} alt="img non trovata"/>}
+                  {el.title}
+                </div>
                 <p className={toggleActiveStyle(i)}>{el.text}</p>
               </div>
             </div>

@@ -1,7 +1,6 @@
-import React, { useRef } from "react";
+import React, { useCallback, useRef, useState } from "react";
 import { Route, Routes, useLocation } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
-import App from "../App";
 import AboutUs from "../pages/AboutUs";
 import ContactUs from "../pages/ContactUs";
 import Services from "../pages/Services";
@@ -11,17 +10,42 @@ import TopbarInfo from "./TopbarInfo";
 import Topbar from "./Topbar";
 import Footer from "./Footer";
 import Home from "../pages/Home";
+import SubscribeButton from "./SubscribeButton";
+
+const hidden = "hidden";
+const auto = "auto";
 
 function AnimatedRoutes() {
+  const [openSubscribe, SetOpenSubscribe] = useState(false);
   const location = useLocation();
   const returnUpPage = useRef(null);
+
+  const openSubscribeBur = useCallback(() => {
+    SetOpenSubscribe(true);
+  }, []);
+
+  const closeSubscribeBur = useCallback(() => {
+    SetOpenSubscribe(false);
+  }, []);
+
   const handleScroll = () => {
     returnUpPage.current.scrollIntoView({ behavior: "smooth" });
   };
   return (
     <>
+      {openSubscribe
+        ? (document.body.style.overflow = "hidden") &&
+          document.body.style.textOverflow === ""
+        : (document.body.style.overflow = "auto") &&
+          document.body.style.textOverflow === ""}
+      {openSubscribe ? (
+        <div className='bg' onClick={closeSubscribeBur} />
+      ) : null}
       <TopbarInfo returnUpPage={returnUpPage} />
-      <Topbar />
+      {openSubscribe ? (
+        <SubscribeButton closeSubscribeBur={closeSubscribeBur} />
+      ) : null}
+      <Topbar openSubscribeBur={openSubscribeBur} />
       <AnimatePresence>
         <Routes location={location} key={location.pathname}>
           <Route path='*' element={<NotFound />}></Route>

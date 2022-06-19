@@ -1,44 +1,80 @@
-.services-info-container{
-    margin: 5rem 5rem;
+.services-info-container {
+    margin: 5rem 0rem;
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     gap: 5rem;
-    .service-info-card{
+
+    .service-info-card {
         display: flex;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
         gap: 4rem;
         box-sizing: border-box;
         padding: 2rem;
-        background: #f3f3f3;
-        border-radius: 15px;
-        box-shadow: 0px 0px 20px;
-        .service-info-text{
-            flex: 50%;
-            h1{
 
-            }
-            p{
+        .service-info-text {
+            margin: 0rem 15rem;
+            text-align: justify;
 
-            }
+            p {}
         }
-        .service-info-img{
-            flex: 50%;
-            img{
+
+        .service-info-img {
+            position: relative;
+
+            .bg {
+                background-color: rgb(0 0 0 / 28%);
+                position: absolute;
+                top: 0;
+                left: 0;
                 width: 100%;
-                height: 400px;
+                height: 98%;
+                z-index: 11;
+            }
+
+            img {
+                width: 80vw;
+                height: 300px;
+                object-fit: cover;
+            }
+
+            .service-info-title {
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 10;
+                color: white;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                height: 100%;
+                z-index: 20;
+
+                h1 {
+                    font-size: 45px;
+                    font-weight: 500;
+                }
             }
         }
-        button{
+
+        button {
             box-sizing: border-box;
             padding: 12px 30px;
-            background-color: rgb(182, 17, 17);
+            background-color: BLACK;
             color: white;
             border: none;
-            border-radius: 20px;
+            border-radius: 5px;
             font-size: 15px;
             font-weight: bold;
             cursor: pointer;
+            font-weight: 600;
+
+            &:hover {
+                transition: 0.4s ease;
+                background-color: #b71212;
+            }
         }
     }
 }

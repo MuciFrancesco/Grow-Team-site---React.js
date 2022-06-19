@@ -369,3 +369,13 @@ textarea{
   resize: none;
   border: 1px solid #858585a3;
 }
+
+.bg{
+  width: 100vw;
+  height: 100vh;
+  background: #000000ad;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 70;
+}

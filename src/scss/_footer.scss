@@ -1,4 +1,4 @@
-.footer{
+.footer {
     display: flex;
     background-color: rgba(0, 0, 0, 0.8196078431);
     width: 100%;
@@ -9,22 +9,27 @@
     justify-self: center;
     gap: 5rem;
     justify-content: center;
-    .footer-info{
+
+    .footer-info {
         margin-left: 2rem;
         width: 33%;
         display: flex;
         flex-direction: column;
-        img{
-           width: 140px;
-           height: 150px;
+
+        img {
+            width: 140px;
+            height: 150px;
         }
-        p{
+
+        p {
             color: white;
         }
-        .footer-social{
+
+        .footer-social {
             display: flex;
             width: 33%;
-            ul{
+
+            ul {
                 display: flex;
                 gap: 1.2rem;
                 align-items: center;
@@ -32,20 +37,24 @@
                 align-content: center;
                 padding: 0;
                 margin: 0;
-                li{
+
+                li {
                     box-sizing: border-box;
                     padding: 8px;
                     list-style-type: none;
                     gap: 1.5rem;
                     border: 1px solid white;
                     border-radius: 50%;
-                    &:hover{
+
+                    &:hover {
                         transition: 0.4s ease;
                         background-color: rgba(232, 68, 68, 0.9019607843);
                     }
-                    a{
+
+                    a {
                         text-decoration: none;
-                        img{
+
+                        img {
                             width: 23px;
                             height: 15px;
                             fill: white !important;
@@ -55,58 +64,72 @@
             }
         }
     }
-    .footer-links{
+
+    .footer-links {
         display: flex;
         width: 33%;
-        ul{
+
+        ul {
             display: flex;
             flex-direction: column;
             gap: 1.5rem;
-            h3{
+
+            h3 {
                 color: white;
             }
-            li{
+
+            li {
                 list-style-type: none;
                 font-size: 15px;
-                &::before{
+
+                &::before {
                     content: "> ";
                     color: white;
                     font-size: 19px;
                 }
-                a{
+
+                a {
                     text-decoration: none;
                     color: white;
-                    &:hover{
-                        color:$red-color;
+
+                    &:hover {
+                        color: $red-color;
                         transition: 0.4s ease;
                     }
                 }
             }
         }
     }
-    .footer-subsribe{
+
+    .footer-subsribe {
         margin-right: 2rem;
         margin-left: 2rem;
         width: 33%;
-        h3{
+
+        h3 {
             color: white;
         }
-        h5{
+
+        h5 {
             color: white;
         }
-        p{
+
+        p {
             color: white;
         }
-        .form{
+
+        .form {
             position: relative;
-            input{
+
+            input {
                 background-color: white;
                 margin: 0px 0px 15px;
                 padding: 15px 29px;
                 border-radius: 25pc;
                 border: none;
             }
-            button{
+
+            button {
                 color: white;
                 background-color: #e84444e6;
                 padding: 5px 10px;
@@ -115,47 +138,51 @@
                 border-radius: 50%;
                 top: 6px;
                 border: none;
+
                 &:hover {
                     transition: 0.3s ease;
                     background-color: black;
                 }
-                img{
-                 fill: white;
-                 width: 15px;
-                 height: 20px;
+
+                img {
+                    fill: white;
+                    width: 15px;
+                    height: 20px;
                 }
             }
         }
     }
 }
 
-.return-to-top{
-   border-top: 1px solid rgba(255, 255, 255, 0.394);
+.return-to-top {
+    border-top: 1px solid rgba(255, 255, 255, 0.394);
     background-color: rgba(0, 0, 0, 0.8196078431);
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: flex-end;
-    img{
-    width: 20px;
-    height: 20px;
-    border: 1px solid rgba(255, 255, 255, 0.394);
-    padding: 10px;
-    border-radius: 50%;
-    position: relative;
-    bottom: 20px;
-    z-index: 10;
-    background: rgb(46 46 46);
-    right: 15px;
-    cursor: pointer;
-    &:hover{
-        background-color: #e84444e6;
-        transition: 0.4s ease;
-    }
+
+    img {
+        width: 20px;
+        height: 20px;
+        border: 1px solid rgba(255, 255, 255, 0.394);
+        padding: 10px;
+        border-radius: 50%;
+        position: relative;
+        bottom: 20px;
+        z-index: 10;
+        background: rgb(46 46 46);
+        right: 15px;
+        cursor: pointer;
+
+        &:hover {
+            background-color: #e84444e6;
+            transition: 0.4s ease;
+        }
     }
 }
 
-.subfooter{
+.subfooter {
     position: relative;
     margin: 0;
     padding-bottom: 15px;
@@ -163,28 +190,35 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-    .copy-right{
-        p{
+
+    .copy-right {
+        p {
             color: rgb(255, 255, 255);
-            span{
+
+            span {
                 color: $red-color;
-                font-weight: 600;    
+                font-weight: 600;
             }
         }
     }
-    .subfooter-links{
+
+    .subfooter-links {
         display: flex;
-        ul{
+
+        ul {
             display: flex;
             gap: 2.2rem;
-            li{
+
+            li {
                 list-style-type: none;
-                a{
+
+                a {
                     color: white;
                     text-decoration: none;
-                    &:hover{
+
+                    &:hover {
                         transition: 0.4s ease;
-                        color:$red-color ;
+                        color: $red-color ;
                     }
                 }
             }

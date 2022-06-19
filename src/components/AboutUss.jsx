@@ -1,8 +1,12 @@
-import React from 'react'
+import React, { useCallback } from 'react'
 import  about from "../assets/about-us.jpg"
 import { Link } from "react-router-dom";
 
+
 function AboutUss() {
+const OpenToTopPage=useCallback(()=>{
+    window.scroll(0,0)
+},[])
   return (
     <div className='about-uss'>
       <div className='about-img'>
@@ -26,7 +30,7 @@ function AboutUss() {
             <li> IT Menagment</li>
           </ul>
         </div>
-        <Link to="/about-us"><button>Scopri di più</button></Link>
+        <Link onClick={OpenToTopPage} to="/about-us"><button>Scopri di più</button></Link>
       </div>
     </div>
   )

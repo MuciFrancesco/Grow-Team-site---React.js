@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-function Topbar() {
+function Topbar({openSubscribeBur}) {
   return (
     <nav>
       <h1></h1>
@@ -11,7 +11,7 @@ function Topbar() {
         <Link to="/team">Team</Link>
         <Link to="/contact-us">Contatti</Link>
         <Link to="/services">Servizi</Link>
-        <button>Iscriviti</button>
+        <button onClick={openSubscribeBur}>Iscriviti</button>
         </div>
 
     </nav>
