@@ -17,7 +17,7 @@
             left: 0;
             z-index: 10;
             width: 100%;
-            height: 100%;
+            height: 99%;
         }
     }
 
@@ -71,4 +71,136 @@
         }
     }
 
+}
+
+
+@media only screen and (max-width:1130px){
+    .about-uss .about-card {
+        position: absolute;
+        width: 50%;
+        background-color: #303032;
+        color: white;
+        box-sizing: border-box;
+        padding: 30px;
+        top: 0;
+        right: 0;
+        z-index: 100;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        height: 99%;
+    }
+    .about-uss .about-card button {
+        margin-top: 1rem;
+        box-sizing: border-box;
+        padding: 10px 20px;
+        background-color: rgb(182, 17, 17);
+        color: white;
+        border: none;
+        border-radius: 20px;
+        font-size: 15px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    .about-uss .about-card .about-text h1 {
+        font-size: 25px;
+    }
+    .about-uss .about-card .about-text p {
+        font-size: 15px;
+    }
+    .about-uss .about-card .about-list {
+        display: flex;
+        gap: 1rem;
+        font-size: 15px;
+    } 
+}
+@media only screen and (max-width:970px){
+    .about-uss .about-card .about-text h1 {
+        font-size: 20px;
+    }
+    .about-uss .about-card .about-text p {
+        font-size: 14px;
+    }
+    .about-uss .about-card button {
+        margin-top: 1rem;
+        box-sizing: border-box;
+        padding: 9px 20px;
+        background-color: rgb(182, 17, 17);
+        color: white;
+        border: none;
+        border-radius: 20px;
+        font-size: 15px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    .about-uss .about-card .about-list {
+        display: flex;
+        gap: 1rem;
+        font-size: 14px;
+    }
+}
+@media only screen and (max-width:880px){
+    .about-uss .about-card {
+         position: relative;
+        width: 100%;
+        background-color: #303032;
+        color: white;
+        box-sizing: border-box;
+        padding: 30px;
+        top: 0;
+        right: 0;
+        z-index: 100;
+        border-radius: 0px;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        z-index: 99;
+    }
+    .about-uss .about-img .bg {
+        position: absolute;
+        background-color: rgb(0 0 0 / 14%);
+        top: 0;
+        left: 0;
+        z-index: 10;
+        width: 100%;
+        height: 100%;
+    }
+    .about-uss .about-img {
+        width: 100%;
+        position: relative;
+        height: 20rem;
+    }
+    .about-uss .about-img img {
+        width: 100%;
+        z-index: 5;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+@media only screen and (max-width:500px){
+    .about-uss .about-img {
+        width: 100%;
+        position: relative;
+        height: 15rem;
+    }
+    .about-uss .about-card .about-text h1 {
+        font-size: 18px;
+    }
+    .about-uss .about-card .about-text p {
+        line-height: 2;
+        font-size: 12.8px;
+    }
+    .about-uss .about-card .about-list {
+        display: flex;
+        gap: 1rem;
+        font-size: 13px;
+    }
+    
+}
+@media only screen and (max-width:430px){
+    .about-uss .about-img {
+        width: 100%;
+        position: relative;
+        height: 0rem;
+    }
 }

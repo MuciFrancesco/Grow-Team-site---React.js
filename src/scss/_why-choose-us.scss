@@ -69,3 +69,87 @@
         }
     }
 }
+@media only screen and (max-width:860px){
+    .why-couse-us-container .why-couse-us .why-couse-us-text h1 {
+        font-weight: 500;
+        font-size: 37px;
+        margin: 0;
+    }
+    .why-couse-us-container .why-couse-us .why-couse-us-text .why-couse-us-btn .btn-1 {
+        font-size: 12px;
+        font-weight: 600;
+        color: white;
+        background: black;
+        border: none;
+        border-radius: 5px;
+        padding: 1rem 1rem;
+    }
+    .why-couse-us-container .why-couse-us .why-couse-us-text .why-couse-us-btn .btn-2 {
+        font-size: 12px;
+        background: white;
+        border: 2px solid rgba(0, 0, 0, 0.6196078431);
+        color: #000000;
+        font-weight: 700;
+        border-radius: 5px;
+        padding: 1rem 1rem;
+    }
+}
+@media only screen and (max-width:764px){
+    .why-couse-us-container .why-couse-us .why-couse-us-text .why-couse-us-btn {
+        display: flex;
+        gap: 2rem;
+        flex-wrap: wrap;
+    }
+    .why-couse-us-container .why-couse-us {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0rem; 
+    }
+    .why-couse-us-container .why-couse-us .why-couse-us-text p {
+        font-size: 15px;
+        margin-right: 2rem;
+    }
+}
+@media only screen and (max-width:685px){
+    .why-couse-us-container .why-couse-us .why-couse-us-text .why-couse-us-btn {
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+    }
+    .why-couse-us-container .why-couse-us .why-couse-us-text h1 {
+        font-weight: 500;
+        font-size: 28px;
+        margin: 0;
+    }
+}
+@media only screen and (max-width:630px){
+    .why-couse-us-container .why-couse-us .why-couse-us-text .why-couse-us-btn {
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+    }
+}
+@media only screen and (max-width:630px){
+    .why-couse-us-container .why-couse-us .why-couse-us-text p {
+        font-size: 15px;
+        margin-right: 2rem;
+        text-align: justify;
+    }
+}
+@media only screen and (max-width:550px){
+    .why-couse-us-container .why-couse-us .why-couse-us-text h1 {
+        font-weight: 500;
+        font-size: 27px;
+        margin: 0;
+        width: 75vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .why-couse-us-container .why-couse-us .why-couse-us-text p {
+        font-size: 15px;
+         margin-right: 0rem; 
+        text-align: justify;
+    }
+}

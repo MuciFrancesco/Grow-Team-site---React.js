@@ -1,6 +1,7 @@
 .client-opinion-container {
     display: flex;
     flex-direction: column;
+    align-items: center;
     margin: 2rem 2rem;
 
     .client-opinion-title {
@@ -20,6 +21,9 @@
         align-items: center;
         justify-content: center;
         overflow: hidden;
+        background: #f2f2f2a1;
+        width: 525px;
+        border-radius: 5px;
 
         .client-slider {
             display: flex;
@@ -37,14 +41,64 @@
                 p {
                     box-sizing: border-box;
                     padding: 0rem 2rem;
+                    font-size: 15px;
                 }
 
                 a {
                     color: black;
                     text-decoration: none;
-                    margin: 0.3rem 0.5rem;
+                    margin: 1.3rem 0.5rem;
                 }
             }
         }
+    }
+}
+
+@media only screen and (max-width:570px){
+    .client-opinion-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 2rem 0rem;
+    }
+    .client-opinion-container .container-slider {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        background: rgba(242, 242, 242, 0.631372549);
+        width: 100%;
+        border-radius: 5px;
+    }
+    .client-opinion-container .container-slider .client-slider .client-slide h4 {
+        box-sizing: border-box;
+        padding: 0rem 2rem;
+        font-size: 15px;
+        margin: 1rem 0.4rem;
+    }
+    .client-opinion-container .container-slider .client-slider .client-slide p {
+        box-sizing: border-box;
+        padding: 0rem 2rem;
+        font-size: 13px;
+    }
+    .client-opinion-container .container-slider .client-slider .client-slide a {
+        color: black;
+        text-decoration: none;
+        margin: 1.3rem 0.5rem;
+        font-size: 14px;
+    }
+    .client-opinion-container .client-opinion-title h1{
+        font-size: 24px;
+        margin: 1rem;
+    }
+    .client-opinion-container .client-opinion-title h3{
+        font-size: 19px;
+        margin: 0.5rem;
+    }
+    .client-opinion-container .container-slider .client-slider .client-slide {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
     }
 }

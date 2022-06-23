@@ -54,3 +54,81 @@
         }
     }
 }
+
+@media only screen and (max-width:980px){
+    .subscribe-bar .subscribe-bar-text button {
+        padding: 12px 22px;
+        border-radius: 25px;
+        background: white;
+        color: black;
+        border: 2px solid rgba(0, 0, 0, 0.2509803922);
+        margin-top: 24px;
+        cursor: pointer;
+        font-size: 15px;
+        font-weight: 700;
+    }
+    .subscribe-bar .subscribe-bar-text h1 {
+        color: white;
+        font-size: 28px;
+    }
+}
+@media only screen and (max-width:980px){
+    .subscribe-bar .subscribe-bar-text {
+        z-index: 10;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: column;
+    }
+}
+@media only screen and (max-width:570px){
+    .subscribe-bar .subscribe-bar-text h1 {
+        color: white;
+        font-size: 24px;
+    }
+    .subscribe-bar .subscribe-bar-text button {
+        padding: 12px 22px;
+        border-radius: 25px;
+        background: white;
+        color: black;
+        border: 2px solid rgba(0, 0, 0, 0.2509803922);
+        margin-top: 0;
+        cursor: pointer;
+        font-size: 15px;
+        font-weight: 700;
+    }
+    .subscribe-bar .subscribe-bar-text {
+        z-index: 10;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+}
+@media only screen and (max-width:480px){
+    .subscribe-bar .subscribe-bar-text h1 {
+        color: white;
+        font-size: 20px;
+    }
+    .subscribe-bar .subscribe-bar-text button {
+        padding: 9px 18px;
+        border-radius: 25px;
+        background: white;
+        color: black;
+        border: 2px solid rgba(0, 0, 0, 0.2509803922);
+        margin-top: 0;
+        cursor: pointer;
+        font-size: 15px;
+        font-weight: 700;
+    }
+}

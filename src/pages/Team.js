@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React from "react";
 import { motion } from "framer-motion";
 import { desctiption, teams } from "../document/array";
 import TeamBg from "../components/TeamBg";
@@ -10,9 +10,9 @@ const infoTeam = "Il nostro Team";
 function Team() {
   return (
     <motion.div
-      initial={{ width: 0 }}
-      animate={{ width: "100%", transition: { duration: 0.3 } }}
-      exit={{ x: window.innerWidth, transition: { duration: 0.3 } }}
+    initial={{ opacity: 0}}
+    animate={{ opacity: 1 }}
+    exit={{ opacity: 0 }}
     >
       <TeamBg infoTeam={infoTeam} />
       <TeamComponenets desctiption={desctiption} team={teams} />

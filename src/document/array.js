@@ -63,6 +63,7 @@ export const opinion = [
 ];
 export const infoTeam = "Scopri chi siamo";
 
+
 export const textLorem =
   "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem dolorum, doloremque quibusdam odit architecto eaque obcaecati harum beatae, labore repellendus cupiditate sunt deserunt dolore quisquam fuga. Quae, quas odit. Dolor.";
 

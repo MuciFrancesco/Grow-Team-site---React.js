@@ -90,3 +90,66 @@
         }
     }
 }
+
+
+
+@media only screen and (max-width:800px){
+    .work-whith-uss-container .contact-uss h1 {
+        font-weight: 400;
+        margin-bottom: 10px;
+    }
+    
+    .work-whith-uss-container .contact-uss h4 {
+        font-weight: 400;
+        padding: 0;
+        margin: 5px;
+    }
+    .work-whith-uss-container .contact-uss .contact .phone-mail .mail a {
+        color: white;
+        text-decoration: none;
+        font-size: 13px;
+    }
+    .work-whith-uss-container .contact-uss .contact .phone-mail .phone a {
+        color: white;
+        text-decoration: none;
+        font-size: 13px;
+    }
+    .work-whith-uss-container .contact-uss .contact .phone-mail .mail img {
+        width: 25px;
+        height: 25px;
+    }
+    .work-whith-uss-container .contact-uss .contact .phone-mail .phone img {
+        width: 25px;
+        height: 25px;
+    }
+    .work-whith-uss-container .contact-uss .contact .social ul li a img {
+        width: 25px;
+        height: 25px;
+        padding: 8px;
+    }
+}
+@media only screen and (max-width:700px){
+    .work-whith-uss-container .contact-uss .contact {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    .work-whith-uss-container .contact-uss h1 {
+        font-weight: 400;
+        margin-bottom: 10px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .work-whith-uss-container .contact-uss h4 {
+        font-weight: 400;
+        padding: 0;
+        margin: 5px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

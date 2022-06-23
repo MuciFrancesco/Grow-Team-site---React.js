@@ -8,9 +8,9 @@ const infoTeam = "Contattaci";
 function ContactUs() {
   return (
     <motion.div
-      initial={{ width: 0 }}
-      animate={{ width: "100%", transition: { duration: 0.3 } }}
-      exit={{ x: window.innerWidth, transition: { duration: 0.3 } }}
+    initial={{ opacity: 0}}
+    animate={{ opacity: 1 }}
+    exit={{ opacity: 0 }}
     >
       <TeamBg infoTeam={infoTeam} />
       <Form />

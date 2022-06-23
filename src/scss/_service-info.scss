@@ -78,3 +78,36 @@
         }
     }
 }
+@media only screen and (max-width:1200px){
+    .services-info-container .service-info-card .service-info-text {
+        margin: 0rem 9rem;
+        text-align: justify;
+    }
+}
+@media only screen and (max-width:1000px){
+    .services-info-container .service-info-card .service-info-text {
+        margin: 0rem 4rem;
+        text-align: justify;
+    }
+}
+@media only screen and (max-width:800px){
+    .services-info-container .service-info-card .service-info-text {
+        margin: 0rem 2rem;
+        text-align: justify;
+    }
+}
+@media only screen and (max-width:700px){
+    .services-info-container .service-info-card .service-info-text {
+        margin: 0rem 0rem;
+        text-align: justify;
+    }
+}
+@media only screen and (max-width:600px){
+    .services-info-container .service-info-card .service-info-text {
+        margin: 0rem 0rem;
+        text-align: justify;
+        p{
+            font-size: 15px;
+        }
+    }
+}
