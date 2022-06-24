@@ -1,8 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Link } from "react-router-dom";
 import { Carousel } from "react-responsive-carousel";
-
 function BusinessCard({ array, textLorem, card }) {
   const handleScrollTo = (index) => (e) => {
     if (card[index]) {
@@ -22,6 +21,7 @@ function BusinessCard({ array, textLorem, card }) {
         showStatus={false}
         transitionTime={700}
         interval={3500}
+        showArrows={true?window.innerWidth>550:false}
       >
         {array.map((el, i) => (
           <div className='business-card' key={el.id} title='imagem'>

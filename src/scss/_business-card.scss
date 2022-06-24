@@ -148,3 +148,94 @@
     display: inline-block;
     margin: 0 8px;
 }
+
+
+@media only screen and (max-width:800px){
+    .business-card-text h1 {
+        font-size: 35px;
+        animation: slideInFromTop 1.3s;
+    }
+    .business-card-text h5 {
+        font-size: 19px;
+        animation: slideInFromTop 0.9s;
+        margin: 0;
+    }
+    .business-card-text p {
+        width: 500px;
+        animation: slideInFromTop 2.1s;
+        font-size: 15px;
+    }
+}
+
+
+@media only screen and (max-width:720px){
+    .business-card {
+        position: relative;
+        height: 570px;
+    }
+    .carousel .control-next.control-arrow:before {
+        border-bottom: 8px solid #fff !important;
+        margin-right: 18px !important;
+    }
+    .carousel .control-prev.control-arrow:before {
+        border-bottom: 8px solid #fff !important;
+        margin-left: 18px !important;
+    }
+    .carousel .control-next.control-arrow:before {
+        border-bottom: 5px solid #fff !important;
+        margin-right: 18px !important;
+    }
+    .carousel .control-next.control-arrow:before {
+        content: "";
+        border: solid #fff;
+        border-width: 0 5px 8px 0;
+        display: inline-block;
+        padding: 14px;
+        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+    }
+    .carousel .control-prev.control-arrow:before {
+        border-bottom: 5px solid #fff !important;
+        margin-left: 18px !important;
+    }
+    .carousel .control-prev.control-arrow:before {
+        border-right: 5px solid #fff !important;
+        border-bottom: 5px solid #fff !important;
+    }
+    .carousel.carousel-slider .control-arrow {
+        top: 0;
+        color: #fff;
+        font-size: 26px;
+        bottom: 0;
+        margin-top: 0;
+         padding: 0px; 
+    }
+    
+    .business-card-text h1 {
+        font-size: 27px;
+        animation: slideInFromTop 1.3s;
+    }
+    .business-card-text h5 {
+        font-size: 17px;
+        animation: slideInFromTop 0.9s;
+        margin: 0;
+    }
+    .business-card-text p {
+        width: 450px;
+        animation: slideInFromTop 2.1s;
+        font-size: 14px;
+    }
+}
+@media only screen and (max-width:558px){
+    .business-card {
+        position: relative;
+        height: 500px;
+    }
+    .business-card-text p {
+        width: 330px;
+        animation: slideInFromTop 2.1s;
+        font-size: 13px;
+    }
+}
+
+//togli le frecce quando si arriva a 515px
