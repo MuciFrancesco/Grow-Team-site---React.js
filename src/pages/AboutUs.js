@@ -6,6 +6,8 @@ import ClientOpinion from "../components/ClientOpinion";
 import AboutPhilosophy from "../components/AboutPhilosophy";
 import AboutUss from "../components/AboutUss";
 import CompanyMission from "../components/CompanyMission";
+import SubscribeBar from "../components/SubscribeBar";
+import CollaborationBar from "../components/CollaborationBar";
 
 function AboutUs() {
   return (
@@ -18,7 +20,9 @@ function AboutUs() {
       <AboutPhilosophy />
       <AboutUss />
       <CompanyMission />
+      <SubscribeBar/>
       <ClientOpinion loremSite={loremSite} opinion={opinion} />
+      <CollaborationBar/>
     </motion.div>
   );
 }

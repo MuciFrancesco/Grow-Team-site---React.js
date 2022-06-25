@@ -27,10 +27,9 @@ function Home({ handleScroll }) {
       <CompanyMission />
       <AboutUss />
       <HowWork information={information} handleScroll={handleScroll} />
-      <CollaborationBar />
-      <SubscribeBar />
       <PromoVideo />
       <WhyCooseUs />
+      <CollaborationBar />
       <ClientOpinion loremSite={loremSite} opinion={opinion} />
     </motion.div>
   );
