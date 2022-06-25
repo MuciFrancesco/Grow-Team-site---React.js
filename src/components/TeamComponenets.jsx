@@ -1,6 +1,5 @@
 import React from 'react'
 import CompanyMission from './CompanyMission'
-import arrowRight from "../assets/arrow-right.svg"
 
 function TeamComponenets({team,desctiption}) {
   return (
