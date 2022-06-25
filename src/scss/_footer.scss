@@ -410,3 +410,30 @@
         gap: 1rem;
     }
 }
+
+@media only screen and (max-width:416px){
+    .footer .footer-subsribe .form input {
+        background-color: white;
+        margin: 0px 0px 15px;
+        padding: 15px 29px;
+        border-radius: 25pc;
+        border: none;
+        width: 100%;
+    }
+    .footer .footer-subsribe .form button {
+        color: white;
+        background-color: rgba(232, 68, 68, 0.9019607843);
+        padding: 5px 10px;
+        position: absolute;
+        left: 245px;
+        border-radius: 50%;
+        top: 6px;
+        border: none;
+    }
+    .subfooter .subfooter-links ul {
+        display: flex;
+        gap: 1rem;
+        padding: 0;
+        flex-wrap: wrap;
+    }
+}

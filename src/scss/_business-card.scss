@@ -237,5 +237,30 @@
         font-size: 13px;
     }
 }
+@media only screen and (max-width:400px){
 
-//togli le frecce quando si arriva a 515px
+    .business-card-text button {
+        padding: 12px 31px;
+        border-radius: 25px;
+        background: transparent;
+        color: white;
+        border: 2px solid white;
+        margin-top: 24px;
+        cursor: pointer;
+        animation: slideInFromTop 2.5s;
+    }
+    .business-card-text h1 {
+        font-size: 24px;
+        animation: slideInFromTop 1.3s;
+    }
+    .business-card-text h5 {
+        font-size: 16px;
+        animation: slideInFromTop 0.9s;
+        margin: 0;
+    }
+    .business-card-text p {
+        width: 250px;
+        animation: slideInFromTop 2.1s;
+        font-size: 12px;
+    }
+}

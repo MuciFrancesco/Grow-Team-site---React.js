@@ -348,3 +348,16 @@ nav{
         padding: 0;
     }
 }
+@media only screen and (max-width:400px){
+    .topbar-info {
+        background-color: rgba(0, 0, 0, 0.8196078431);
+        display: flex;
+        align-items: flex-end;
+        gap: 0rem;
+        padding-right: 0;
+        width: 100%;
+        flex-direction: column;
+        padding-right: 0rem;
+        box-sizing: border-box;
+    }
+}

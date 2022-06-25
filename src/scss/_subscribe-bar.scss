@@ -132,3 +132,22 @@
         font-weight: 700;
     }
 }
+@media only screen and (max-width:405px){
+    .subscribe-bar .subscribe-bar-text h1 {
+        color: white;
+        font-size: 23px;
+        width: 219px;
+        font-weight: 500;
+    }
+    .subscribe-bar .subscribe-bar-text button {
+        padding: 9px 18px;
+        border-radius: 25px;
+        background: white;
+        color: black;
+        border: 2px solid rgb(0 0 0);
+        margin-top: 0;
+        cursor: pointer;
+        font-size: 15px;
+        font-weight: 700;
+    }
+}

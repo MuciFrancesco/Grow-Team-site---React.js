@@ -192,3 +192,58 @@
         font-size: 22px;
     }
 }
+@media only screen and (max-width:450px){
+    .work-whith-uss-container .contact-uss .contact .phone-mail {
+        display: flex;
+        gap: 1rem !important;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+        flex-direction: column;
+        width: 100%;
+        align-items: flex-start;
+        justify-content: start;
+    }
+    .work-whith-uss-container {
+        background-color: #202020;
+        padding: 0.5rem 0rem;
+        box-sizing: border-box;
+    }
+    .work-whith-uss-container .contact-uss h1 {
+        font-weight: 400;
+        margin-bottom: 10px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 24px;
+        margin: 0;
+    }
+    .work-whith-uss-container .contact-uss h4 {
+        font-weight: 300;
+        padding: 0;
+        margin: 5px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .how-work-container .how-work-cards .how-work-card {
+        box-sizing: border-box;
+        box-shadow: 0px 10px 24px 6px rgb(0 0 0 / 43%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        border-radius: 5px;
+        flex-wrap: wrap;
+    }
+    .how-work-container .title h1 {
+        margin: 0;
+        font-size: 19px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+}

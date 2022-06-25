@@ -272,3 +272,44 @@
         text-align: justify;
     }
 }
+@media only screen and (max-width:400px){
+    .team-container .team-components .team-style-one .style-one-text .info button {
+        color: white;
+        font-weight: 600;
+        font-size: 13px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        padding: 0.7rem 1rem;
+        border-radius: 50px;
+        border: none;
+        background-color: rgb(182, 17, 17);
+        cursor: pointer;
+        width: 50%;
+    }
+    .team-container .team-components .team-style-two {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        gap: 2rem;
+        flex-direction: column-reverse;
+    }
+    .team-container .team-components .team-style-two .style-two-img {
+        width: 75%;
+    }
+    .team-container .team-components .team-style-two .style-two-text {
+        box-sizing: border-box;
+        padding: 0px 0px 0px 0px;
+        width: 90%;
+    }
+    .team-container .team-components .team-style-two {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100% !important;
+        gap: 2rem;
+        flex-direction: column-reverse;
+    }
+}
