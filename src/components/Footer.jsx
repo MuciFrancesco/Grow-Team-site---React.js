@@ -40,11 +40,11 @@ function Footer({handleScroll}) {
           <Link to="/about-us"><li><a href="">Storia dell'azienda</a></li></Link>
           <Link to="/about-us"><li><a href="">About Us</a></li></Link>
           <Link to="/services"><li><a href="">Servizi</a></li></Link>
-          <li><a href="#">Politica Privacy</a></li>
+          <Link to="/"><li><a href="#">Politica Privacy</a></li></Link>
         </ul>
         <ul>
           <h3>Info</h3>
-          <li><a href="">La nostra missione</a></li>
+          <Link to="/"><li><a href="">La nostra missione</a></li></Link>
           <Link to="/services"><li><a href="">I nostri obiettivi</a></li></Link>
           <Link to="/about-us"><li><a href="">Chi siamo</a></li></Link>  
           <Link to="/team"><li><a href="">Il nostro Team</a></li></Link>
