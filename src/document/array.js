@@ -3,8 +3,9 @@ import team from "../assets/team.jpg";
 import partner from "../assets/partner.jpg";
 import business from "../assets/business.jpg";
 import crypto from "../assets/crypto.jpg";
-import nft from "../assets/nft.webp";
-import primaryResorce from "../assets/primary-resorce.jpg";
+import nft1 from "../assets/nft.webp";
+import nft from "../assets/nft.jpg"
+import primaryResorce from "../assets/primary-resorces.jpg";
 import kristina from "../assets/team-kristina.jpg";
 import bob from "../assets/team-bob.jpg";
 import ali from "../assets/team-ali.jpg";

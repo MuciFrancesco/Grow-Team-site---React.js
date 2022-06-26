@@ -24,7 +24,7 @@
             position: relative;
 
             .bg {
-                background-color: rgb(0 0 0 / 28%);
+                background-color: rgb(0 0 0 / 56%);
                 position: absolute;
                 top: 0;
                 left: 0;
@@ -111,7 +111,12 @@
         }
     }
 }
-
+@media only screen and (max-width:465px){
+    .services-info-container .service-info-card .service-info-img .service-info-title h1 {
+        font-size: 36px;
+        font-weight: 500;
+    }
+}
 
 @media only screen and (max-width:400px){
     .services-info-container .service-info-card .service-info-img .service-info-title h1 {

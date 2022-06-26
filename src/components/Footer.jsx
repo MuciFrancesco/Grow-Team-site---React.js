@@ -1,5 +1,5 @@
 
-import React, { useRef } from 'react'
+import React from 'react'
 import logo from "../assets/logo.png"
 import facebook from "../assets/facebook.svg"
 import twitter from "../assets/twitter.svg"
@@ -7,6 +7,7 @@ import linkedin from "../assets/linkedin.svg"
 import instagram from "../assets/instagram.svg"
 import arrowRight from "../assets/arrow-right.svg"
 import arrowTop from "../assets/arrow-up.svg"
+import { Link } from 'react-router-dom'
 
 
 function Footer({handleScroll}) {
@@ -36,17 +37,17 @@ function Footer({handleScroll}) {
       <div className='footer-links'>
         <ul>
           <h3>Service</h3>
-          <li><a href="">Storia dell'azienda</a></li>
-          <li><a href="">About Us</a></li>
-          <li><a href="">Servizi</a></li>
-          <li><a href="">Politica Privacy</a></li>
+          <Link to="/about-us"><li><a href="">Storia dell'azienda</a></li></Link>
+          <Link to="/about-us"><li><a href="">About Us</a></li></Link>
+          <Link to="/services"><li><a href="">Servizi</a></li></Link>
+          <li><a href="#">Politica Privacy</a></li>
         </ul>
         <ul>
           <h3>Info</h3>
           <li><a href="">La nostra missione</a></li>
-          <li><a href="">I nostri obiettivi</a></li>
-          <li><a href="">Chi siamo</a></li>
-          <li><a href="">Il nostro Team</a></li>
+          <Link to="/services"><li><a href="">I nostri obiettivi</a></li></Link>
+          <Link to="/about-us"><li><a href="">Chi siamo</a></li></Link>  
+          <Link to="/team"><li><a href="">Il nostro Team</a></li></Link>
         </ul>
       </div>
       <div className='footer-subsribe'>
