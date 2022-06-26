@@ -436,13 +436,20 @@ nav{
     }
     nav {
         padding-right: 0rem;
-        margin: 1rem 0rem;
+        margin: 0rem 0rem;
         box-sizing: border-box;
         width: 100%;
         display: flex;
         align-items: center;
         justify-content: space-between;
-        margin-top: 1rem;
+        margin-top: 0rem;
+        padding: 1rem 0rem;
+        background: aliceblue;
+    }
+    nav .topbar-links a:hover {
+        transition: 0.2s ease;
+        color: rgb(182, 17, 17);
+        text-decoration: none ;
     }
     .business-card-text h1 {
         font-size: 28px;
