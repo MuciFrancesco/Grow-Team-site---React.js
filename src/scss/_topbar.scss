@@ -324,12 +324,12 @@ nav{
     }
     nav .topbar-links button {
         box-sizing: border-box;
-        padding: 7px 15px;
+        padding: 10px 23px;
         background-color: rgb(182, 17, 17);
         color: white;
         border: none;
         border-radius: 20px;
-        font-size: 12px;
+        font-size: 13px;
         font-weight: bold;
         cursor: pointer;
         font-weight: 700;
@@ -418,6 +418,7 @@ nav{
         color: rgb(182, 17, 17);
         text-decoration: none;
     }
+
 }
 @media only screen and (max-width:400px){
     .topbar-info {

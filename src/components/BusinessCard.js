@@ -1,8 +1,17 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Link } from "react-router-dom";
 import { Carousel } from "react-responsive-carousel";
 function BusinessCard({ array, textLorem, card }) {
+  const [width, setWidth] = useState(0)
+  useEffect(() => {
+      const onResize = () => setWidth(window.innerWidth)
+      window.addEventListener('resize', onResize);
+      return () => {
+          window.removeEventListener("resize", onResize)
+      }
+  }, [setWidth])
+
   const handleScrollTo = (index) => (e) => {
     if (card[index]) {
       card[index].current.scrollIntoView({ behavior: "smooth" });
@@ -21,7 +30,7 @@ function BusinessCard({ array, textLorem, card }) {
         showStatus={false}
         transitionTime={700}
         interval={3500}
-        showArrows={true?window.innerWidth>550:false}
+        showArrows={true?width>550:false}
       >
         {array.map((el, i) => (
           <div className='business-card' key={el.id} title='imagem'>
