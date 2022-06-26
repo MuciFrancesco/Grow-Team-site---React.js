@@ -28,9 +28,9 @@ function AnimatedRoutes() {
     SetOpenSubscribe(false);
   }, []);
 
-  const handleScroll = () => {
+  const handleScroll = useCallback( () => {
     returnUpPage.current.scrollIntoView({ behavior: "smooth" });
-  };
+  },[]);
   return (
     <>
       {openSubscribe

@@ -1,4 +1,4 @@
-import React, { createRef } from "react";
+import React, { createRef, useCallback } from "react";
 
 import CollaborationBar from "../components/CollaborationBar";
 import { information, textLoremS, textLoremXXL } from "../document/array";
@@ -10,11 +10,11 @@ import { motion } from "framer-motion";
 
 function Services({ returnUpPage }) {
   const card = useMemo(() => information.map((i) => createRef([])), []);
-  const handleScrollTo = (index) => (e) => {
+  const handleScrollTo =useCallback( (index) => (e) => {
     if (card[index + 1]) {
       card[index + 1].current.scrollIntoView({ behavior: "smooth" });
     }
-  };
+  },[card]);
   return (
     <motion.div
     initial={{ opacity: 0}}
