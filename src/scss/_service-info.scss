@@ -111,3 +111,25 @@
         }
     }
 }
+
+
+@media only screen and (max-width:400px){
+    .services-info-container .service-info-card .service-info-img .service-info-title h1 {
+        font-size: 34px;
+        font-weight: 500;
+    }
+    .services-info-container .service-info-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 4rem;
+        box-sizing: border-box;
+        padding: 1rem;
+    }
+    .services-info-container .service-info-card .service-info-img img {
+        width: 95vw;
+        height: 300px;
+        object-fit: cover;
+    }
+}

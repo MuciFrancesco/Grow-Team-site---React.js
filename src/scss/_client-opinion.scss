@@ -10,9 +10,15 @@
         align-items: center;
         justify-content: center;
 
-        h3 {}
+        h3 {
+            margin: 11px;
+        }
 
-        h1 {}
+        h1 {
+            margin: 12px;
+            margin-top: 4px;
+            margin-bottom: 31px;
+        }
     }
 
     .container-slider {
@@ -21,9 +27,11 @@
         align-items: center;
         justify-content: center;
         overflow: hidden;
-        background: #f2f2f2a1;
+        background: rgba(242, 242, 242, 0.631372549);
         width: 525px;
-        border-radius: 5px;
+        border-radius: 10px;
+        border: 1px solid rgb(0 0 0 / 23%);
+        box-shadow: 0px 0px 20px #00000069;
 
         .client-slider {
             display: flex;
@@ -45,8 +53,8 @@
                 }
 
                 a {
-                    color: black;
-                    text-decoration: none;
+                    color: $red-color;
+                    text-decoration: underline;
                     margin: 1.3rem 0.5rem;
                 }
             }

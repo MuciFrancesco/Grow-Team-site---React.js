@@ -258,6 +258,19 @@ nav{
     }
 }
 @media only screen and (max-width:700px){
+    nav h1 {
+        padding-left: 0rem;
+        width: 20%;
+    }
+    nav .topbar-links {
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: row;
+        width: 80%;
+    }
     nav {
         margin: 1rem 0rem;
         box-sizing: border-box;
@@ -265,16 +278,8 @@ nav{
         display: flex;
         align-items: center;
         justify-content: space-between;
-        margin-top: 5rem;
-    }
-    nav .topbar-links {
-        padding: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: nowrap;
-        flex-direction: row;
-        width: 100%;
+        margin-top: 1rem;
+        padding-right: 1rem;
     }
 }
 @media only screen and (max-width:650px){
@@ -348,6 +353,72 @@ nav{
         padding: 0;
     }
 }
+@media only screen and (max-width:500px){
+    nav h1 {
+        padding-left: 0rem;
+        width: 40%;
+    }
+}
+@media only screen and (max-width:460px){
+    nav h1 {
+        padding-left: 0rem;
+        width: 0%  !important;
+    }
+    nav .topbar-links {
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: row;
+        width: 100%;
+    }
+    .topbar-info {
+        background-color: rgba(0, 0, 0, 0.8196078431);
+        display: flex;
+        align-items: flex-end;
+        gap: 0rem;
+        padding-right: 0;
+        width: 100%;
+        flex-direction: column;
+        padding-right: 1rem;
+        box-sizing: border-box;
+        height: 111px;
+    }
+    .topbar-info {
+        background-color: rgba(0, 0, 0, 0.8196078431);
+        display: flex;
+        gap: 0rem;
+        padding-right: 0;
+        width: 100%;
+        flex-direction: column;
+        padding-right: 1rem;
+        box-sizing: border-box;
+        height: 111px;
+        justify-content: center;
+    }
+    .topbar-info .mail {
+        color: white;
+        text-decoration: none;
+        font-size: 13px;
+    }
+    .topbar-info .cell {
+        display: flex;
+        color: white;
+        gap: 0.2rem;
+        font-size: 11px;
+        margin: 0;
+        align-items: center;
+        padding: 0;
+        font-size: 13px;
+    }
+    .topbar-info .cell .cell-a {
+        font-weight: bold;
+        font-size: 13px;
+        color: rgb(182, 17, 17);
+        text-decoration: none;
+    }
+}
 @media only screen and (max-width:400px){
     .topbar-info {
         background-color: rgba(0, 0, 0, 0.8196078431);
@@ -359,5 +430,75 @@ nav{
         flex-direction: column;
         padding-right: 0rem;
         box-sizing: border-box;
+        margin: 0rem 0rem;
+        height: 120px;
     }
+    nav {
+        padding-right: 0rem;
+        margin: 1rem 0rem;
+        box-sizing: border-box;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 1rem;
+    }
+    .business-card-text h1 {
+        font-size: 28px;
+        animation: slideInFromTop 1.3s;
+    }
+    .business-card-text p {
+        width: 100%;
+        animation: slideInFromTop 2.1s;
+        font-size: 12px;
+    }
+    .business-card-text button {
+        padding: 11px 28px;
+        border-radius: 25px;
+        background: transparent;
+        color: white;
+        border: 2px solid white;
+        margin-top: 24px;
+        cursor: pointer;
+        animation: slideInFromTop 2.5s;
+    }
+    .topbar-info {
+        background-color: rgba(0, 0, 0, 0.8196078431);
+        display: flex;
+        align-items: flex-end;
+        gap: 0rem;
+        padding-right: 0;
+        width: 100%;
+        flex-direction: column;
+        padding-right: 0rem;
+        box-sizing: border-box;
+        margin: 0rem 0rem;
+        height: 120px;
+        justify-content: center;
+    }
+    .topbar-info .mail {
+        color: white;
+        text-decoration: none;
+        font-size: 13px !important;
+        padding-right: 1rem;
+    }
+    .topbar-info .cell .cell-a {
+        font-weight: bold;
+        font-size: 13px;
+        color: rgb(182, 17, 17);
+        text-decoration: none;
+    }
+    .topbar-info .cell {
+        display: flex;
+        color: white;
+        gap: 0.2rem;
+        font-size: 13px;
+        margin: 0;
+        align-items: center;
+        padding: 0;
+        width: 100%;
+        justify-content: flex-end;
+        padding-right: 1rem;
+    }
+
 }
