@@ -30,6 +30,8 @@ function BusinessCard({ array, textLorem, card }) {
         showStatus={false}
         transitionTime={700}
         interval={3500}
+        preventMovementUntilSwipeScrollTolerance={true}
+        swipeScrollTolerance={50}
         showArrows={true?width>550:false}
       >
         {array.map((el, i) => (
