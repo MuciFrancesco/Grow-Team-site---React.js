@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import grafich from "../assets/grafich.png";
-import plus from "../assets/plus.svg"
-import minum from "../assets/minus.svg"
+import plus from "../assets/plus.svg";
+import minum from "../assets/minus.svg";
 
 function CompanyMission() {
   const textContent =
@@ -28,21 +28,25 @@ function CompanyMission() {
   };
 
   return (
-    <div className='company-mission'>
+    <div className="company-mission">
       <h4>Il nostro obiettivo</h4>
       <h1>La nostra missione</h1>
       <p>{textContent}</p>
-      <div className='mission'>
-        <div className='mission-object'>
+      <div className="mission">
+        <div className="mission-object">
           {showText.object.map((el, i) => (
             <div
-              className='mission-text'
+              className="mission-text"
               key={i}
               onClick={() => handleOpenActive(i)}
             >
-              <div className='mission-text-div'>
+              <div className="mission-text-div">
                 <div className="mission-text-title">
-                  {showText.activeDiv===showText.object[i]?<img src={minum} alt="img non trovata"/>:<img src={plus} alt="img non trovata"/>}
+                  {showText.activeDiv === showText.object[i] ? (
+                    <img src={minum} alt="img non trovata" />
+                  ) : (
+                    <img src={plus} alt="img non trovata" />
+                  )}
                   {el.title}
                 </div>
                 <p className={toggleActiveStyle(i)}>{el.text}</p>
@@ -50,8 +54,8 @@ function CompanyMission() {
             </div>
           ))}
         </div>
-        <div className='mission-img'>
-          <img src={grafich} alt='' />
+        <div className="mission-img">
+          <img src={grafich} alt="" />
         </div>
       </div>
     </div>

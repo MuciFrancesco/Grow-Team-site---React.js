@@ -12,8 +12,6 @@ import Footer from "./Footer";
 import Home from "../pages/Home";
 import SubscribeButton from "./SubscribeButton";
 
-const hidden = "hidden";
-const auto = "auto";
 
 function AnimatedRoutes() {
   const [openSubscribe, SetOpenSubscribe] = useState(false);
@@ -28,9 +26,10 @@ function AnimatedRoutes() {
     SetOpenSubscribe(false);
   }, []);
 
-  const handleScroll = useCallback( () => {
+  const handleScroll = useCallback(() => {
     returnUpPage.current.scrollIntoView({ behavior: "smooth" });
-  },[]);
+  }, []);
+
   return (
     <>
       {openSubscribe
@@ -39,7 +38,7 @@ function AnimatedRoutes() {
         : (document.body.style.overflow = "auto") &&
           document.body.style.textOverflow === ""}
       {openSubscribe ? (
-        <div className='bg' onClick={closeSubscribeBur} />
+        <div className="bg" onClick={closeSubscribeBur} />
       ) : null}
       <TopbarInfo returnUpPage={returnUpPage} />
       {openSubscribe ? (
@@ -48,18 +47,18 @@ function AnimatedRoutes() {
       <Topbar openSubscribeBur={openSubscribeBur} />
       <AnimatePresence>
         <Routes location={location} key={location.pathname}>
-          <Route path='*' element={<NotFound />}></Route>
+          <Route path="*" element={<NotFound />}></Route>
           <Route
-            path='/'
+            path="/"
             element={<Home handleScroll={handleScroll} />}
           ></Route>
-          <Route path='/team' element={<Team />}></Route>
-          <Route path='/contact-us' element={<ContactUs />}></Route>
+          <Route path="/team" element={<Team />}></Route>
+          <Route path="/contact-us" element={<ContactUs />}></Route>
           <Route
-            path='/services'
+            path="/services"
             element={<Services returnUpPage={returnUpPage} />}
           ></Route>
-          <Route path='/about-us' element={<AboutUs />}></Route>
+          <Route path="/about-us" element={<AboutUs />}></Route>
         </Routes>
       </AnimatePresence>
       <Footer handleScroll={handleScroll} />

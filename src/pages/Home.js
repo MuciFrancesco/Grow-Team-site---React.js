@@ -12,7 +12,6 @@ import AboutUss from "../components/AboutUss";
 import HowWork from "../components/HowWork";
 import CollaborationBar from "../components/CollaborationBar";
 import ClientOpinion from "../components/ClientOpinion";
-import SubscribeBar from "../components/SubscribeBar";
 import PromoVideo from "../components/PromoVideo";
 import WhyCooseUs from "../components/WhyCooseUs";
 
